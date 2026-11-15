@@ -57,8 +57,10 @@ class PublicationCatalog:
     def search(self, text: str) -> list[Publication]:
         """Поиск публикаций по названию и ключевым словам."""
         text = text.lower().strip()
-        return [pub for pub in self.all("publications")
-                if text in pub.title.lower() or text in pub.keywords]
+        found = [pub for pub in self.all("publications")
+                 if text in pub.title.lower() or text in pub.keywords]
+        # сначала самые свежие публикации
+        return sorted(found, key=lambda pub: pub.year, reverse=True)
 
     def publications_of(self, author_id: int) -> list[Publication]:
         self.get("people", author_id)  # если автора нет - будет NotFoundError
