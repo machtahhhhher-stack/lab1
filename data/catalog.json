@@ -1,0 +1,205 @@
+{
+  "organizations": [
+    {
+      "id": 1,
+      "type": "organization",
+      "name": "МГТУ «СТАНКИН»",
+      "city": "Москва"
+    },
+    {
+      "id": 2,
+      "type": "organization",
+      "name": "Институт проблем управления РАН",
+      "city": "Москва"
+    },
+    {
+      "id": 3,
+      "type": "organization",
+      "name": "Нижегородский технический университет",
+      "city": "Нижний Новгород"
+    }
+  ],
+  "venues": [
+    {
+      "id": 1,
+      "type": "journal",
+      "name": "Учебный вестник прикладной информатики",
+      "issn": "1234-5678",
+      "quartile": "Q2"
+    },
+    {
+      "id": 2,
+      "type": "journal",
+      "name": "Учебный журнал программных систем",
+      "issn": "8765-4321",
+      "quartile": "Q3"
+    },
+    {
+      "id": 3,
+      "type": "conference",
+      "name": "Информационные технологии в промышленности",
+      "city": "Москва",
+      "year": 2025
+    }
+  ],
+  "people": [
+    {
+      "id": 1,
+      "type": "author",
+      "full_name": "Соколова Мария Андреевна",
+      "email": "sokolova@example.ru",
+      "organization_id": 1,
+      "h_index": 7
+    },
+    {
+      "id": 2,
+      "type": "author",
+      "full_name": "Петров Игорь Викторович",
+      "email": "petrov.iv@example.ru",
+      "organization_id": 1,
+      "h_index": 12
+    },
+    {
+      "id": 3,
+      "type": "author",
+      "full_name": "Кузнецов Алексей Олегович",
+      "email": "kuznetsov@example.ru",
+      "organization_id": 2,
+      "h_index": 4
+    },
+    {
+      "id": 4,
+      "type": "author",
+      "full_name": "Белова Анна Сергеевна",
+      "email": "",
+      "organization_id": 3,
+      "h_index": 2
+    },
+    {
+      "id": 5,
+      "type": "reviewer",
+      "full_name": "Орлов Дмитрий Павлович",
+      "email": "orlov@example.ru",
+      "specialization": "машинное обучение"
+    },
+    {
+      "id": 6,
+      "type": "reviewer",
+      "full_name": "Морозова Елена Ивановна",
+      "email": "morozova@example.ru",
+      "specialization": "базы данных"
+    },
+    {
+      "id": 7,
+      "type": "editor",
+      "full_name": "Васильев Сергей Николаевич",
+      "email": "editor@example.ru",
+      "journal_id": 1
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "type": "article",
+      "title": "Применение нейронных сетей для прогнозирования износа инструмента",
+      "year": 2024,
+      "author_ids": [
+        1,
+        2
+      ],
+      "keywords": [
+        "нейронные сети",
+        "прогнозирование",
+        "станки"
+      ],
+      "doi": "10.1234/uvpi.2024.18.3.45",
+      "journal_id": 1,
+      "volume": 18,
+      "issue": 3,
+      "pages": "45-58"
+    },
+    {
+      "id": 2,
+      "type": "article",
+      "title": "Сравнение форматов XML и JSON для обмена данными в САПР",
+      "year": 2023,
+      "author_ids": [
+        3
+      ],
+      "keywords": [
+        "xml",
+        "json",
+        "сапр"
+      ],
+      "doi": "",
+      "journal_id": 2,
+      "volume": 11,
+      "issue": 1,
+      "pages": "12-20"
+    },
+    {
+      "id": 3,
+      "type": "paper",
+      "title": "Цифровой двойник участка механообработки",
+      "year": 2025,
+      "author_ids": [
+        2,
+        4
+      ],
+      "keywords": [
+        "цифровой двойник",
+        "станки"
+      ],
+      "doi": "",
+      "conference_id": 3,
+      "pages": "101-106"
+    },
+    {
+      "id": 4,
+      "type": "monograph",
+      "title": "Объектно-ориентированное проектирование информационных систем",
+      "year": 2022,
+      "author_ids": [
+        2,
+        3
+      ],
+      "keywords": [
+        "ооп",
+        "uml"
+      ],
+      "doi": "",
+      "publisher": "Москва: Наука",
+      "page_count": 312,
+      "isbn": "978-5-02-040123-4"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "type": "review",
+      "publication_id": 1,
+      "reviewer_id": 5,
+      "score": 8,
+      "verdict": "принять",
+      "comment": "Хорошая статья, мелкие замечания по оформлению"
+    },
+    {
+      "id": 2,
+      "type": "review",
+      "publication_id": 1,
+      "reviewer_id": 6,
+      "score": 6,
+      "verdict": "доработать",
+      "comment": "Нужно больше экспериментов"
+    },
+    {
+      "id": 3,
+      "type": "review",
+      "publication_id": 3,
+      "reviewer_id": 5,
+      "score": 9,
+      "verdict": "принять",
+      "comment": ""
+    }
+  ]
+}

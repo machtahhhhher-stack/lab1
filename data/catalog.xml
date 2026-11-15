@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalog>
+  <organizations>
+    <organization id="1">
+      <name>МГТУ «СТАНКИН»</name>
+      <city>Москва</city>
+    </organization>
+    <organization id="2">
+      <name>Институт проблем управления РАН</name>
+      <city>Москва</city>
+    </organization>
+    <organization id="3">
+      <name>Нижегородский технический университет</name>
+      <city>Нижний Новгород</city>
+    </organization>
+  </organizations>
+  <venues>
+    <journal id="1">
+      <name>Учебный вестник прикладной информатики</name>
+      <issn>1234-5678</issn>
+      <quartile>Q2</quartile>
+    </journal>
+    <journal id="2">
+      <name>Учебный журнал программных систем</name>
+      <issn>8765-4321</issn>
+      <quartile>Q3</quartile>
+    </journal>
+    <conference id="3">
+      <name>Информационные технологии в промышленности</name>
+      <city>Москва</city>
+      <year>2025</year>
+    </conference>
+  </venues>
+  <people>
+    <author id="1">
+      <full_name>Соколова Мария Андреевна</full_name>
+      <email>sokolova@example.ru</email>
+      <organization_id>1</organization_id>
+      <h_index>7</h_index>
+    </author>
+    <author id="2">
+      <full_name>Петров Игорь Викторович</full_name>
+      <email>petrov.iv@example.ru</email>
+      <organization_id>1</organization_id>
+      <h_index>12</h_index>
+    </author>
+    <author id="3">
+      <full_name>Кузнецов Алексей Олегович</full_name>
+      <email>kuznetsov@example.ru</email>
+      <organization_id>2</organization_id>
+      <h_index>4</h_index>
+    </author>
+    <author id="4">
+      <full_name>Белова Анна Сергеевна</full_name>
+      <email />
+      <organization_id>3</organization_id>
+      <h_index>2</h_index>
+    </author>
+    <reviewer id="5">
+      <full_name>Орлов Дмитрий Павлович</full_name>
+      <email>orlov@example.ru</email>
+      <specialization>машинное обучение</specialization>
+    </reviewer>
+    <reviewer id="6">
+      <full_name>Морозова Елена Ивановна</full_name>
+      <email>morozova@example.ru</email>
+      <specialization>базы данных</specialization>
+    </reviewer>
+    <editor id="7">
+      <full_name>Васильев Сергей Николаевич</full_name>
+      <email>editor@example.ru</email>
+      <journal_id>1</journal_id>
+    </editor>
+  </people>
+  <publications>
+    <article id="1">
+      <title>Применение нейронных сетей для прогнозирования износа инструмента</title>
+      <year>2024</year>
+      <author_ids list="true">
+        <item>1</item>
+        <item>2</item>
+      </author_ids>
+      <keywords list="true">
+        <item>нейронные сети</item>
+        <item>прогнозирование</item>
+        <item>станки</item>
+      </keywords>
+      <doi>10.1234/uvpi.2024.18.3.45</doi>
+      <journal_id>1</journal_id>
+      <volume>18</volume>
+      <issue>3</issue>
+      <pages>45-58</pages>
+    </article>
+    <article id="2">
+      <title>Сравнение форматов XML и JSON для обмена данными в САПР</title>
+      <year>2023</year>
+      <author_ids list="true">
+        <item>3</item>
+      </author_ids>
+      <keywords list="true">
+        <item>xml</item>
+        <item>json</item>
+        <item>сапр</item>
+      </keywords>
+      <doi />
+      <journal_id>2</journal_id>
+      <volume>11</volume>
+      <issue>1</issue>
+      <pages>12-20</pages>
+    </article>
+    <paper id="3">
+      <title>Цифровой двойник участка механообработки</title>
+      <year>2025</year>
+      <author_ids list="true">
+        <item>2</item>
+        <item>4</item>
+      </author_ids>
+      <keywords list="true">
+        <item>цифровой двойник</item>
+        <item>станки</item>
+      </keywords>
+      <doi />
+      <conference_id>3</conference_id>
+      <pages>101-106</pages>
+    </paper>
+    <monograph id="4">
+      <title>Объектно-ориентированное проектирование информационных систем</title>
+      <year>2022</year>
+      <author_ids list="true">
+        <item>2</item>
+        <item>3</item>
+      </author_ids>
+      <keywords list="true">
+        <item>ооп</item>
+        <item>uml</item>
+      </keywords>
+      <doi />
+      <publisher>Москва: Наука</publisher>
+      <page_count>312</page_count>
+      <isbn>978-5-02-040123-4</isbn>
+    </monograph>
+  </publications>
+  <reviews>
+    <review id="1">
+      <publication_id>1</publication_id>
+      <reviewer_id>5</reviewer_id>
+      <score>8</score>
+      <verdict>принять</verdict>
+      <comment>Хорошая статья, мелкие замечания по оформлению</comment>
+    </review>
+    <review id="2">
+      <publication_id>1</publication_id>
+      <reviewer_id>6</reviewer_id>
+      <score>6</score>
+      <verdict>доработать</verdict>
+      <comment>Нужно больше экспериментов</comment>
+    </review>
+    <review id="3">
+      <publication_id>3</publication_id>
+      <reviewer_id>5</reviewer_id>
+      <score>9</score>
+      <verdict>принять</verdict>
+      <comment />
+    </review>
+  </reviews>
+</catalog>
